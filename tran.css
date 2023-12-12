@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+    animation: transition 5s;
+}
+@keyframes transition{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}

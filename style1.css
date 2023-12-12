@@ -1,0 +1,104 @@
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right,#404040,#0000) ;
+    color: #ffff;
+}
+#header-text{
+    padding: 80px 0px;
+    color: #ababab;
+}
+.row1{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.intro-col-1{
+    flex-basis: 45%;
+}
+.intro-col-1 img{
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 50%;
+}
+.intro-col-2{
+    flex-basis: 55%;
+    margin-top: 7%;
+    font-size: 40px;
+}
+.intro-col-2 h1{
+    font-size: 80px;
+    margin: 20px;   
+    font-weight: 800;
+}
+.intro-col-2 h2{
+    font-size: 25px;
+    margin: 20px;  
+    font-weight: 200; 
+}
+
+---------------------------------nav-------------------------
+button.neumorphic {
+    container-type: inline-size;
+    aspect-ratio: 1/1;
+    border: 0.5rem solid transparent;
+    border-radius: 1rem;
+    background-color: rgb(63, 63, 63);
+    color: #ffff;
+    
+    
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    width: 110px;
+    border-radius: 50%;
+    outline: none;  
+    transition: all 0.1s;
+    
+    &:hover, &:focus-visible {
+      color: hsl(179, 80%, 50%);
+      scale: 1.1
+    }
+    &:active, &.active{
+      box-shadow:
+        var(--shadow),
+        inset .5rem .5rem 1rem hsl(0 0% 50% / .5),
+        inset -.5rem -.5rem 1rem hsl(0 0% 100% / .75);
+      color: hsl(179 80% 50%);
+      > i { font-size: 28cqi};
+      > span { font-size: 13cqi};
+    }
+  
+    >i {
+      font-size: 31cqi;
+    }
+    > span {
+      font-family: system-ui, sans-serif;
+      font-size: 16cqi;
+    }
+  }
+  
+  body {
+    background-color: #121313;
+    padding: 2rem;
+  }
+  h1 {
+    text-align: center;
+    color: hsl(0 0% 10%);
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+  }
+  .buttons {
+    display: grid;
+    width: min(75rem, 100%);
+    margin-inline: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(8rem, 100%), 1fr));
+    gap: 2rem;
+  }
